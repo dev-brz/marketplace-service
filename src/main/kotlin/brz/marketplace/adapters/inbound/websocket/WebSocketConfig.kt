@@ -1,4 +1,4 @@
-package brz.marketplace.adapters.outbound.web
+package brz.marketplace.adapters.inbound.websocket
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Configuration
@@ -9,8 +9,8 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 
 @Configuration
 @EnableWebSocketMessageBroker
-internal class WebSocketConfig(
-    @Value("\${ui.url}") private val uiUrl: String
+private class WebSocketConfig(
+    @Value($$"${ui.url}") private val uiUrl: String
 ) : WebSocketMessageBrokerConfigurer {
 
     override fun registerStompEndpoints(registry: StompEndpointRegistry) {
