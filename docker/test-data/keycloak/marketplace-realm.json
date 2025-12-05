@@ -1,0 +1,33 @@
+{
+  "realm": "marketplace",
+  "enabled": true,
+
+  "clients": [
+    {
+      "clientId": "marketplace-api",
+      "name": "Marketplace API",
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "secret": "29047406-037c-4004-8e72-00a6dc367aa2",
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [ "*" ],
+      "webOrigins": [ "*" ]
+    }
+  ],
+
+  "users": [
+    {
+      "username": "test",
+      "enabled": true,
+      "email": "test@example.com",
+      "credentials": [
+        {
+          "type": "test",
+          "value": "test",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["user"]
+    }
+  ]
+}
