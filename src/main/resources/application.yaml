@@ -1,3 +1,5 @@
 spring:
   application:
     name: marketplace
+ui:
+  url: http://localhost:4200
