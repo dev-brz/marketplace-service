@@ -1,5 +1,18 @@
 spring:
   application:
     name: marketplace
+springdoc:
+  packagesToScan: brz.marketplace.adapters.inbound.rest
+  pathsToMatch: /api/v1/**
+
 ui:
   url: http://localhost:4200
+keycloak:
+  url: http://localhost:8081
+  realm: marketplace
+  admin:
+    username: admin
+    password: admin
+  client:
+    id: marketplace-api
+    secret: 29047406-037c-4004-8e72-00a6dc367aa2
