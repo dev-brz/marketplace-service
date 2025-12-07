@@ -4,6 +4,7 @@ spring:
 springdoc:
   packagesToScan: brz.marketplace.adapters.inbound.rest
   pathsToMatch: /api/v1/**
+  defaultProducesMediaType: application/json
 
 ui:
   url: http://localhost:4200

@@ -34,6 +34,6 @@ private class UserController(private val userRepository: UserRepository) : Docum
 private interface Documented {
     @Operation(summary = "List all users", description = "Returns a list containing all users in the system.")
     @OkApiResponse
-    @InternalServerErrorApiResponse
+    @InternalServerErrorApiResponse // TODO - fix response body for this error response
     fun getUsers(): UsersResponse
 }
